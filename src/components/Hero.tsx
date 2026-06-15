@@ -141,11 +141,6 @@ export default function Hero({ t }: Props) {
             </div>
             <div className="hero__stat-divider" />
             <div className="hero__stat">
-              <span className="hero__stat-num">3+</span>
-              <span className="hero__stat-label">{t.hero.greeting.includes('Gerardo') ? 'Años de experiencia' : 'Years of experience'}</span>
-            </div>
-            <div className="hero__stat-divider" />
-            <div className="hero__stat">
               <span className="hero__stat-num">7</span>
               <span className="hero__stat-label">{t.hero.greeting.includes('Gerardo') ? 'Tecnologías' : 'Technologies'}</span>
             </div>

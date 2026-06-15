@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import type { Translations } from '../i18n/es';
 import mockupBarberflow from '../assets/mockup_barberflow.png';
 import mockupInvitamagic from '../assets/mockup_invitamagic.png';
@@ -29,14 +28,6 @@ const gradientBg: Record<number, string> = {
 };
 
 export default function Projects({ t }: Props) {
-  const [activeFilter, setActiveFilter] = useState('all');
-
-  const filtered = activeFilter === 'all'
-    ? t.projects.items
-    : t.projects.items.filter(p => p.category === activeFilter);
-
-  const filterKeys = Object.entries(t.projects.filters);
-
   return (
     <section className="section projects" id="proyectos">
       <div className="container">
@@ -45,22 +36,9 @@ export default function Projects({ t }: Props) {
           <h2 className="section-title">{t.projects.subtitle}</h2>
         </div>
 
-        {/* Filters */}
-        <div className="projects__filters reveal reveal-delay-1">
-          {filterKeys.map(([key, label]) => (
-            <button
-              key={key}
-              className={`projects__filter-btn${activeFilter === key ? ' active' : ''}`}
-              onClick={() => setActiveFilter(key)}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
-
         {/* Grid */}
         <div className="projects__grid">
-          {filtered.map((project, i) => {
+          {t.projects.items.map((project, i) => {
             const originalIndex = t.projects.items.findIndex(p => p.name === project.name);
             const hasMockup = mockupImages[originalIndex] !== undefined;
 
