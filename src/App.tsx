@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { es } from './i18n/es';
 import { en } from './i18n/en';
 import Navbar from './components/Navbar';
