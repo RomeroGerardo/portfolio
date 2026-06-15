@@ -1,0 +1,86 @@
+.contact {
+  background: linear-gradient(180deg, transparent 0%, rgba(124, 58, 237, 0.03) 100%);
+}
+
+.contact__card {
+  position: relative;
+  padding: 4rem;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.contact__glow--violet {
+  background: rgba(124, 58, 237, 0.15);
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -100px;
+}
+
+.contact__glow--blue {
+  background: rgba(37, 99, 235, 0.1);
+  width: 350px;
+  height: 350px;
+  bottom: -100px;
+  left: -100px;
+}
+
+.contact__content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact__available {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 1rem;
+  border-radius: 2rem;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4ade80;
+  margin-bottom: 0.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.contact__desc {
+  color: #a0a0bf;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact__btn {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 640px) {
+  .contact__card { padding: 2.5rem 1.5rem; }
+  .contact__actions { flex-direction: column; width: 100%; }
+  .contact__btn { width: 100%; justify-content: center; }
+}

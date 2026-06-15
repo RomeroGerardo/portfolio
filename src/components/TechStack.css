@@ -1,0 +1,55 @@
+.techstack__header { margin-bottom: 3rem; }
+
+.techstack__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+.techstack__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  cursor: default;
+  transition: all 0.3s !important;
+}
+
+.techstack__item:hover {
+  border-color: var(--tech-color, rgba(124, 58, 237, 0.4)) !important;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--tech-color, #7c3aed) 20%, transparent) !important;
+  transform: translateY(-6px) !important;
+}
+
+.techstack__icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 0.6rem;
+  background: rgba(255,255,255,0.04);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: var(--tech-color, #a78bfa);
+}
+
+.techstack__name {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #a0a0bf;
+  transition: color 0.3s;
+}
+
+.techstack__item:hover .techstack__name {
+  color: #f0f0ff;
+}
+
+@media (max-width: 480px) {
+  .techstack__grid { grid-template-columns: repeat(3, 1fr); }
+}
