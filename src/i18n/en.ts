@@ -36,54 +36,71 @@ export const en: Translations = {
     title: 'Projects',
     subtitle: 'Real work, delivered',
     viewDemo: 'View Demo',
+    requestDemo: 'Request Demo via WhatsApp',
     items: [
       {
         name: 'BarberFlow SaaS',
         desc: 'Multi-tenant SaaS platform for barbershops. Appointment booking, client management, services and payments. Per-business admin panel + central Super Admin.',
         tags: ['Next.js', 'Supabase', 'Multi-tenant', 'SaaS'],
         category: 'saas',
+        demoUrl: 'https://barber-flow-ai-showcase-git-main-romerogerardos-projects.vercel.app/',
+        imageKey: 'barberflow'
       },
       {
         name: 'InvitaMagic',
         desc: 'Digital invitation app with AI-powered text generation (Groq), real-time countdown, RSVP tracking and shareable links via WhatsApp.',
         tags: ['React', 'Groq AI', 'Supabase', 'Framer Motion'],
         category: 'webapp',
+        demoUrl: 'https://invita-magic.vercel.app/login',
+        imageKey: 'invitamagic'
       },
       {
         name: 'TicketFlow',
         desc: 'Expense management system with mobile receipt scanning, AI-powered OCR (Gemini) to auto-read amounts, and web approval panel.',
         tags: ['Flutter', 'React', 'Gemini OCR', 'Supabase'],
         category: 'mobile',
+        demoUrl: 'https://wa.me/543573402221?text=Hello,%20I%20would%20like%20to%20see%20a%20demo%20of%20TicketFlow',
+        imageKey: 'ticketflow'
       },
       {
-        name: 'VitalTrack SaaS',
+        name: 'NovaMed SaaS',
         desc: 'SaaS for health professionals. Patient tracking with vital metrics charts, clinical history and evolution dashboards.',
         tags: ['React 19', 'TanStack Query', 'Recharts', 'Supabase'],
         category: 'saas',
+        demoUrl: 'https://nova-med-rho.vercel.app/dashboard',
+        imageKey: 'novamed'
       },
       {
         name: 'AuraCRM',
         desc: 'Full-featured CRM with Kanban pipeline, contact and company management, sales activity tracking and E2E automated tests with Playwright.',
         tags: ['React', 'Supabase', 'Playwright E2E', 'CRM'],
         category: 'system',
+        demoUrl: 'https://aura-crm-rosy.vercel.app/login',
+        imageKey: 'auracrm'
       },
       {
-        name: 'GlowBook',
-        desc: 'Mobile app for beauty salons and aesthetic centers. Appointment scheduling, services, client management and automatic reminders.',
-        tags: ['Flutter', 'Dart', 'Mobile', 'Local Business'],
-        category: 'mobile',
-      },
-      {
-        name: 'Web Catalogs',
-        desc: 'Digital catalogs for local businesses: general stores and bakeries. Products, prices and direct WhatsApp contact.',
+        name: 'Online Catalog',
+        desc: 'Digital catalogs for local businesses. Products, prices and direct WhatsApp contact.',
         tags: ['React', 'Responsive', 'WhatsApp', 'Local'],
         category: 'webapp',
+        demoUrl: 'https://catalogoonlinedemo.vercel.app/',
+        imageKey: 'catalogo_online'
       },
       {
-        name: 'Credit Ledger App',
-        desc: 'Mobile app for small stores and shops. Customer credit management with payment history tracking.',
+        name: 'Bakery Catalog',
+        desc: 'Specialized digital catalog for bakery businesses. Products, prices and orders via WhatsApp.',
+        tags: ['React', 'Responsive', 'WhatsApp', 'Local'],
+        category: 'webapp',
+        demoUrl: 'https://catalogo-reposteria-demo.vercel.app/',
+        imageKey: 'catalogo_reposteria'
+      },
+      {
+        name: 'Confianza App',
+        desc: 'Mobile app (Credit Ledger) for small stores and shops. Customer credit management with payment history tracking.',
         tags: ['Mobile', 'Kotlin', 'Android', 'Local Business'],
         category: 'mobile',
+        demoUrl: 'https://wa.me/543573402221?text=Hello,%20I%20would%20like%20to%20see%20a%20demo%20of%20Confianza%20App',
+        imageKey: 'confianza'
       },
     ],
     filters: {

@@ -1,30 +1,25 @@
 import type { Translations } from '../i18n/es';
-import mockupBarberflow from '../assets/mockup_barberflow.png';
+import mockupBarberflow from '../assets/mockup_barberflow_real.png';
 import mockupInvitamagic from '../assets/mockup_invitamagic.png';
-import mockupTicketflow from '../assets/mockup_ticketflow.png';
-import mockupVitaltrack from '../assets/mockup_vitaltrack.png';
-import mockupAuracrm from '../assets/mockup_auracrm.png';
-import mockupGlowbook from '../assets/mockup_glowbook.png';
+import mockupTicketflow from '../assets/mockup_ticketflow_real.jpeg';
+import mockupNovamed from '../assets/mockup_novamed.png';
+import mockupAuracrm from '../assets/mockup_auracrm_real.png';
+import mockupCatalogoOnline from '../assets/mockup_catalogo_online.png';
+import mockupCatalogoReposteria from '../assets/mockup_catalogo_reposteria.png';
+import mockupConfianza from '../assets/mockup_confianza.jpeg';
 import './Projects.css';
 
 interface Props { t: Translations; }
 
-// Map project index to mockup image (for those that have one)
-const mockupImages: Record<number, string> = {
-  0: mockupBarberflow,
-  1: mockupInvitamagic,
-  2: mockupTicketflow,
-  3: mockupVitaltrack,
-  4: mockupAuracrm,
-  5: mockupGlowbook,
-};
-
-// Gradient backgrounds for projects without mockups
-const gradientBg: Record<number, string> = {
-  4: 'linear-gradient(135deg, #1a0533 0%, #0d1a33 100%)',  // AuraCRM
-  5: 'linear-gradient(135deg, #0d1a1a 0%, #1a1a0d 100%)',  // GlowBook
-  6: 'linear-gradient(135deg, #001a33 0%, #0d0d1a 100%)',  // Catalogos
-  7: 'linear-gradient(135deg, #1a1a0d 0%, #0d001a 100%)',  // Libreta
+const mockupImages: Record<string, string> = {
+  barberflow: mockupBarberflow,
+  invitamagic: mockupInvitamagic,
+  ticketflow: mockupTicketflow,
+  novamed: mockupNovamed,
+  auracrm: mockupAuracrm,
+  catalogo_online: mockupCatalogoOnline,
+  catalogo_reposteria: mockupCatalogoReposteria,
+  confianza: mockupConfianza,
 };
 
 export default function Projects({ t }: Props) {
@@ -39,19 +34,17 @@ export default function Projects({ t }: Props) {
         {/* Grid */}
         <div className="projects__grid">
           {t.projects.items.map((project, i) => {
-            const originalIndex = t.projects.items.findIndex(p => p.name === project.name);
-            const hasMockup = mockupImages[originalIndex] !== undefined;
+            const hasMockup = project.imageKey && mockupImages[project.imageKey] !== undefined;
 
             return (
               <div key={project.name} className={`glass-card projects__card reveal reveal-delay-${(i % 3) + 1}`}>
                 {/* Project image */}
                 <div
                   className="projects__img-wrapper"
-                  style={!hasMockup ? { background: gradientBg[originalIndex] } : undefined}
                 >
                   {hasMockup ? (
                     <img
-                      src={mockupImages[originalIndex]}
+                      src={mockupImages[project.imageKey as string]}
                       alt={project.name}
                       className="projects__img"
                       loading="lazy"
@@ -75,6 +68,18 @@ export default function Projects({ t }: Props) {
                       <span key={tag} className="tag">{tag}</span>
                     ))}
                   </div>
+                  
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline"
+                      style={{ marginTop: '1.5rem', alignSelf: 'flex-start', fontSize: '0.875rem', padding: '0.6rem 1.2rem' }}
+                    >
+                      {project.demoUrl.includes('wa.me') ? t.projects.requestDemo : t.projects.viewDemo}
+                    </a>
+                  )}
                 </div>
               </div>
             );
