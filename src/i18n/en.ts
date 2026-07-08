@@ -67,7 +67,7 @@ export const en: Translations = {
         desc: 'SaaS for health professionals. Patient tracking with vital metrics charts, clinical history and evolution dashboards.',
         tags: ['React 19', 'TanStack Query', 'Recharts', 'Supabase'],
         category: 'saas',
-        demoUrl: 'https://nova-med-rho.vercel.app/dashboard',
+        demoUrl: 'https://nova-med-rho.vercel.app/',
         imageKey: 'novamed'
       },
       {

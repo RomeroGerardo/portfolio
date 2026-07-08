@@ -65,7 +65,7 @@ export const es = {
         desc: 'SaaS para profesionales de salud. Seguimiento de pacientes con gráficas de métricas vitales, historial clínico y dashboards de evolución.',
         tags: ['React 19', 'TanStack Query', 'Recharts', 'Supabase'],
         category: 'saas',
-        demoUrl: 'https://nova-med-rho.vercel.app/dashboard',
+        demoUrl: 'https://nova-med-rho.vercel.app/',
         imageKey: 'novamed'
       },
       {
