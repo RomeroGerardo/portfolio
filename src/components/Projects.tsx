@@ -37,7 +37,7 @@ export default function Projects({ t }: Props) {
             const hasMockup = project.imageKey && mockupImages[project.imageKey] !== undefined;
 
             return (
-              <div key={project.name} className={`glass-card projects__card reveal reveal-delay-${(i % 3) + 1}`}>
+              <div key={project.imageKey || i} className={`glass-card projects__card reveal reveal-delay-${(i % 3) + 1}`}>
                 {/* Project image */}
                 <div
                   className="projects__img-wrapper"
