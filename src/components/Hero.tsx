@@ -123,18 +123,7 @@ export default function Hero({ t }: Props) {
 
           </div>
 
-          {/* Stats */}
-          <div className="hero__stats reveal reveal-delay-4">
-            <div className="hero__stat">
-              <span className="hero__stat-num">10+</span>
-              <span className="hero__stat-label">{t.hero.greeting.includes('Gerardo') ? 'Proyectos entregados' : 'Projects delivered'}</span>
-            </div>
-            <div className="hero__stat-divider" />
-            <div className="hero__stat">
-              <span className="hero__stat-num">7</span>
-              <span className="hero__stat-label">{t.hero.greeting.includes('Gerardo') ? 'Tecnologías' : 'Technologies'}</span>
-            </div>
-          </div>
+
         </div>
 
         {/* Right: photo */}
