@@ -16,8 +16,6 @@ export default function Footer({ t }: Props) {
         <p className="footer__rights">
           © {new Date().getFullYear()} Romero Labs. {t.footer.rights}
         </p>
-
-        <p className="footer__made">{t.footer.made}</p>
       </div>
     </footer>
   );

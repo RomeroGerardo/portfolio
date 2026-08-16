@@ -89,6 +89,8 @@ body {
   text-transform: uppercase;
   color: var(--accent-violet-light);
   margin-bottom: 0.75rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .section-title {
@@ -98,6 +100,8 @@ body {
   color: var(--text-primary);
   line-height: 1.15;
   margin-bottom: 1rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .section-subtitle {
