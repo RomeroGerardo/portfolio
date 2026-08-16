@@ -19,17 +19,7 @@ export default function Contact({ t }: Props) {
             <p className="contact__desc">{t.contact.desc}</p>
 
             <div className="contact__actions">
-              <a
-                href="https://www.fiverr.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary contact__btn"
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M23 9.5h-1.3c-.3 0-.5.1-.7.2-.3-2.5-2.3-4.5-4.8-4.7V3.5c0-.3-.2-.5-.5-.5s-.5.2-.5.5v1.5h-1V3.5c0-.3-.2-.5-.5-.5s-.5.2-.5.5v1.5c-2.5.2-4.5 2.2-4.8 4.7-.2-.1-.4-.2-.7-.2H1c-.3 0-.5.2-.5.5v4c0 .3.2.5.5.5h1.3c.5 1.8 1.9 3.2 3.7 3.7V20c0 .3.2.5.5.5s.5-.2.5-.5v-1.8h1V20c0 .3.2.5.5.5s.5-.2.5-.5v-1.8c1.8-.5 3.2-1.9 3.7-3.7H14v1.5c0 .3.2.5.5.5s.5-.2.5-.5V14h1v1.5c0 .3.2.5.5.5s.5-.2.5-.5V14H23c.3 0 .5-.2.5-.5v-4c0-.3-.2-.5-.5-.5z"/>
-                </svg>
-                {t.contact.fiverr}
-              </a>
+
 
               <a
                 href="https://wa.me/543573402221"
