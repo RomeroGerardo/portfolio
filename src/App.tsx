@@ -3,6 +3,7 @@ import { es } from './i18n/es';
 import { en } from './i18n/en';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AboutMe from './components/AboutMe';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import TechStack from './components/TechStack';
@@ -45,6 +46,7 @@ function App() {
       <Navbar t={t} lang={lang} toggleLang={toggleLang} />
       <main>
         <Hero t={t} />
+        <AboutMe t={t} />
         <Services t={t} />
         <Projects t={t} />
         <TechStack t={t} />

@@ -1,6 +1,7 @@
 // ES translations
 export const es = {
   nav: {
+    about: 'Sobre mí',
     services: 'Servicios',
     projects: 'Proyectos',
     stack: 'Stack',
@@ -16,6 +17,23 @@ export const es = {
     cta: 'Ver Proyectos',
     ctaFiverr: 'Contrátame en Fiverr',
     badge: 'Disponible para proyectos',
+  },
+  about: {
+    label: 'Perfil Profesional',
+    title: 'Sobre mí',
+    role: 'Desarrollador Full Stack · Integración con IA',
+    bio1: 'Soy Técnico Superior en Desarrollo de Software egresado del Instituto Superior de Villa del Rosario (Córdoba, Argentina). Me especializo en la construcción de soluciones completas de software: desde plataformas SaaS multi-tenant y sistemas empresariales hasta aplicaciones móviles nativas.',
+    bio2: 'Mi enfoque combina una sólida base de arquitectura e ingeniería de software (Clean Architecture, MVC, Patrones de Diseño, testing automatizado con Playwright) con la integración práctica de Inteligencia Artificial para resolver problemas reales de negocio.',
+    degree: 'Técnico Superior en Desarrollo de Software',
+    institution: 'Instituto Superior de Villa del Rosario — Córdoba, Argentina',
+    pillar1Title: 'Proyectos Entregados',
+    pillar1Desc: 'Sistemas SaaS, GovTech y Web Apps funcionando en producción.',
+    pillar2Title: 'Integración IA',
+    pillar2Desc: 'Modelos multimodales Gemini OCR, Groq API y orquestación multi-agente.',
+    pillar3Title: 'Testing Automatizado',
+    pillar3Desc: 'Pruebas E2E con Playwright y testing unitario con arquitectura robusta.',
+    pillar4Title: 'Desarrollo Móvil',
+    pillar4Desc: 'Apps nativas en Kotlin (Jetpack Compose) y multiplataforma en Flutter.',
   },
   services: {
     title: 'Servicios',
@@ -34,15 +52,35 @@ export const es = {
     title: 'Proyectos',
     subtitle: 'Trabajos reales, entregados',
     viewDemo: 'Ver Demo',
+    viewRepo: 'GitHub',
     requestDemo: 'Pedir Demo por WhatsApp',
     items: [
+      {
+        name: 'EcoMapa V2.1 — GovTech SaaS',
+        desc: 'Suite integral de gestión ambiental para municipios: consola SuperAdmin, portal operativo municipal y app Android nativa en Kotlin con escáner de residuos por IA (Gemini). Arquitectura multi-tenant en Supabase.',
+        tags: ['React + Vite', 'TypeScript', 'Kotlin + Compose', 'Supabase', 'Gemini AI', 'Multi-tenant'],
+        category: 'saas',
+        demoUrl: 'https://eco-mapa-landin-page.vercel.app/',
+        repoUrl: 'https://github.com/RomeroGerardo/EcoMapaLandinPage',
+        imageKey: 'ecomapa'
+      },
       {
         name: 'BarberFlow SaaS',
         desc: 'Plataforma SaaS multi-tenant para barberías. Gestión de turnos, clientes, servicios y pagos. Panel admin por negocio + Super Admin central.',
         tags: ['Next.js', 'Supabase', 'Multi-tenant', 'SaaS'],
         category: 'saas',
         demoUrl: 'https://barber-flow-ai-showcase-git-main-romerogerardos-projects.vercel.app/',
+        repoUrl: 'https://github.com/RomeroGerardo/barber-flow-ai-showcase',
         imageKey: 'barberflow'
+      },
+      {
+        name: 'AuraCRM (Web + Mobile)',
+        desc: 'CRM completo con pipeline Kanban, gestión de contactos, actividad de ventas y suite de tests automatizados E2E con Playwright. Versión móvil nativa en Kotlin.',
+        tags: ['React', 'Supabase', 'Playwright E2E', 'Kotlin', 'CRM'],
+        category: 'system',
+        demoUrl: 'https://aura-crm-rosy.vercel.app/login',
+        repoUrl: 'https://github.com/RomeroGerardo/AuraCrm',
+        imageKey: 'auracrm'
       },
       {
         name: 'InvitaMagic',
@@ -50,6 +88,7 @@ export const es = {
         tags: ['React', 'Groq AI', 'Supabase', 'Framer Motion'],
         category: 'webapp',
         demoUrl: 'https://invita-magic.vercel.app/login',
+        repoUrl: 'https://github.com/RomeroGerardo/InvitaMagic',
         imageKey: 'invitamagic'
       },
       {
@@ -66,15 +105,8 @@ export const es = {
         tags: ['React 19', 'TanStack Query', 'Recharts', 'Supabase'],
         category: 'saas',
         demoUrl: 'https://nova-med-rho.vercel.app/',
+        repoUrl: 'https://github.com/RomeroGerardo/Nova-Med',
         imageKey: 'novamed'
-      },
-      {
-        name: 'AuraCRM',
-        desc: 'CRM completo con pipeline Kanban, gestión de contactos y empresas, actividad de ventas y tests automatizados E2E con Playwright.',
-        tags: ['React', 'Supabase', 'Playwright E2E', 'CRM'],
-        category: 'system',
-        demoUrl: 'https://aura-crm-rosy.vercel.app/login',
-        imageKey: 'auracrm'
       },
       {
         name: 'Catálogo Online',
@@ -82,6 +114,7 @@ export const es = {
         tags: ['React', 'Responsive', 'WhatsApp', 'Local'],
         category: 'webapp',
         demoUrl: 'https://catalogoonlinedemo.vercel.app/',
+        repoUrl: 'https://github.com/RomeroGerardo/CatalogoOnline',
         imageKey: 'catalogo_online'
       },
       {
@@ -90,6 +123,7 @@ export const es = {
         tags: ['React', 'Responsive', 'WhatsApp', 'Local'],
         category: 'webapp',
         demoUrl: 'https://catalogo-reposteria-demo.vercel.app/',
+        repoUrl: 'https://github.com/RomeroGerardo/catalogo_reposteria_demo',
         imageKey: 'catalogo_reposteria'
       },
       {
@@ -98,6 +132,7 @@ export const es = {
         tags: ['Mobile', 'Kotlin', 'Android', 'Negocio Local'],
         category: 'mobile',
         demoUrl: 'https://wa.me/543573402221?text=Hola,%20me%20gustar%C3%ADa%20ver%20una%20demo%20de%20Confianza%20App',
+        repoUrl: 'https://github.com/RomeroGerardo/AuraCrmMobile',
         imageKey: 'confianza'
       },
     ],
